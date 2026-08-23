@@ -7,7 +7,7 @@
 ## 🔭 지금 하고 있는 것
 
 - 🤖 빌드 실패를 자동 진단하는 에이전트 시스템 — 클라우드 에이전트 런타임에서 **에이전트를 데이터가 있는 머신으로 보내는 구조**로 재설계
-- ☕ Java/Spring 전이 학습: 익숙한 도메인(작업 큐)을 새 기술로 재구현하며 설계 근거를 면접 언어로 정리 중 → [`job-orchestrator`](https://github.com/jeong-jaehyeon/job-orchestrator)
+- ☕ Java/Spring 전이 학습: 3년간 운영한 작업 큐 도메인을 Spring Boot로 다시 구현하며 설계 감각을 검증 중 → [`job-orchestrator`](https://github.com/jeong-jaehyeon/job-orchestrator)
 - ✍️ 운영 경험 글쓰기: DB 기반 영속 큐(CAS + reconciliation), 폴링 vs 이벤트 push 트레이드오프
 
 ## 🧰 Tech Stack
@@ -22,7 +22,8 @@
 ## 📌 대표 프로젝트
 
 - [`agora`](https://github.com/jeong-jaehyeon/agora) — 멀티 AI 코드 리뷰 오케스트레이터. Claude·Gemini·Copilot을 하나의 파이프라인에서 조율
-- [`job-orchestrator`](https://github.com/jeong-jaehyeon/job-orchestrator) — 분산 작업 오케스트레이터 (Spring Boot 3 · JPA 낙관적 락 · Testcontainers). **8스레드 동시 선점 경합 테스트로 "성공은 정확히 1건"을 실DB에서 검증**
+- [`llm-guardrails-demo`](https://github.com/jeong-jaehyeon/llm-guardrails-demo) — 프로덕션 LLM 통합의 4대 안전장치(마스킹·인젝션 방어·출력 재검증·비용 추적). API 키 없이도 실행되는 데모
+- [`job-orchestrator`](https://github.com/jeong-jaehyeon/job-orchestrator) — 분산 작업 오케스트레이터 (Spring Boot 3 · JPA 낙관적 락 · Redis 분산 락 · Testcontainers). **8스레드 동시 선점 경합을 실DB에서 검증**
 - [`socket-vs-ws`](https://github.com/jeong-jaehyeon/socket-vs-ws) — 순수 WebSocket vs Socket.IO, 같은 기능을 두 방식으로 구현·벤치마크·테스트한 비교 데모
 - [`redis-adapter-scaleout`](https://github.com/jeong-jaehyeon/redis-adapter-scaleout) — 멀티 인스턴스에서 브로드캐스트가 깨지는 이유와 Redis Adapter(Pub/Sub)로 복구하기
 - [`stock-server`](https://github.com/jeong-jaehyeon/stock-server) / [`stock-client`](https://github.com/jeong-jaehyeon/stock-client) — Express + Sequelize REST API & React 클라이언트
