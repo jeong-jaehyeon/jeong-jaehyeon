@@ -22,7 +22,9 @@
 ## 📌 대표 프로젝트
 
 - [`agora`](https://github.com/jeong-jaehyeon/agora) — 멀티 AI 코드 리뷰 오케스트레이터. Claude·Gemini·Copilot을 하나의 파이프라인에서 조율
-- [`job-orchestrator`](https://github.com/jeong-jaehyeon/job-orchestrator) — 분산 작업 오케스트레이터 (Spring Boot 3 · JPA 낙관적 락 · Redis 분산 락 · Testcontainers). 실무 큐 시스템 경험의 Spring 재현
+- [`job-orchestrator`](https://github.com/jeong-jaehyeon/job-orchestrator) — 분산 작업 오케스트레이터 (Spring Boot 3 · JPA 낙관적 락 · Testcontainers). **8스레드 동시 선점 경합 테스트로 "성공은 정확히 1건"을 실DB에서 검증**
+- [`socket-vs-ws`](https://github.com/jeong-jaehyeon/socket-vs-ws) — 순수 WebSocket vs Socket.IO, 같은 기능을 두 방식으로 구현·벤치마크·테스트한 비교 데모
+- [`redis-adapter-scaleout`](https://github.com/jeong-jaehyeon/redis-adapter-scaleout) — 멀티 인스턴스에서 브로드캐스트가 깨지는 이유와 Redis Adapter(Pub/Sub)로 복구하기
 - [`stock-server`](https://github.com/jeong-jaehyeon/stock-server) / [`stock-client`](https://github.com/jeong-jaehyeon/stock-client) — Express + Sequelize REST API & React 클라이언트
 
 ## 📫 Contact
@@ -32,5 +34,4 @@
 <!--
 추가 예정:
 - 기술 블로그 링크 (첫 포스팅 후)
-- WebSocket vs ws / Redis Adapter 스케일아웃 데모 레포
 -->
